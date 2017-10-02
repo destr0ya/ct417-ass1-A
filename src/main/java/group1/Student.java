@@ -1,13 +1,14 @@
 package group1;
 
 import org.joda.time.DateTime;
+import org.joda.time.Years;
 
 public class Student {
 
     String name;
     DateTime DOB;
     int id;
-    String username;
+    int age;
 
     public void setName(String name) {
         this.name = name;
@@ -21,8 +22,10 @@ public class Student {
         this.id = ID;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    private int getAge(DateTime DOB) {
+        DateTime now = new DateTime();
+        Years age = Years.yearsBetween(DOB, now);
+        return age.getYears();
     }
 
     public String getName() {
@@ -38,7 +41,8 @@ public class Student {
     }
 
     public String getUsername() {
-        return this.username;
+        String username = name + age;
+        return username;
     }
 
 }

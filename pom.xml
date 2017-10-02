@@ -21,6 +21,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <kotlin.version>1.1.4-3</kotlin.version>
         <junit.version>4.12</junit.version>
+        <property name="idea.dynamic.classpath.jar" value="false" />
     </properties>
 
     <dependencies>
@@ -33,6 +34,11 @@
             <groupId>joda-time</groupId>
             <artifactId>joda-time</artifactId>
             <version>2.9.9</version>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>5.0.0</version>
         </dependency>
     </dependencies>
 

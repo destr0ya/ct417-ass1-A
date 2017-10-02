@@ -1,0 +1,22 @@
+package group1;
+
+import org.joda.time.DateTime;
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+public class getUsernameTest {
+
+    @Test
+    public void testUsername(){
+        Student student = new Student();
+        student.setName("Emma Meehan");
+        DateTime dt = new DateTime();
+        dt.dayOfMonth().setCopy(11);
+        dt.monthOfYear().setCopy(12);
+        dt.year().setCopy(1996);
+        student.setDOB(dt);
+
+        assertEquals(student.getUsername(), "Emma Meehan20");
+    }
+
+}
