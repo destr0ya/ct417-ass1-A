@@ -12,8 +12,8 @@
 
     <distributionManagement>
         <repository>
-            <id>dropbox-mvn-repo</id>
-            <url>file:///C:/Users/Emma/Dropbox/Public</url>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
         </repository>
     </distributionManagement>
 
